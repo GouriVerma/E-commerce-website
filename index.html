@@ -4,14 +4,385 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylenow.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3e928b86f6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        .part-3{
+            position: relative;
+            width: 100%;
+            height: 32vmin;
+        }
+        .part-3 .number-band{
+           
+           position: absolute;
+           width: 100%;
+           transform: translate(-50%,-50%);/*helps to center object*/
+           top: 50%;               
+           left: 50%;
+           display: flex;
+           justify-content: center;
+           gap: 100px;
+        }
+       .part-3 .container-dynamic{
+           width: 28vmin;
+           height: 28vmin;
+           
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           padding: 5em 0;
+           position: relative;
+           font-size: 16px;
+           border-radius: 0.5em;
+           /*background-color: #ffffffd7;*/
+          /* border-bottom: 10px solid #302f3f;*/
+
+        }
+       .part-3 i{
+           color: #646363;
+           text-align: center;
+           font-size: 2.5em;
+        }
+       .part-3 span.num{
+           color: #2a2929;
+           display: grid;
+           place-items: center;
+           font-weight: 400;
+           font-size: 3em;
+           padding: 10px 0;
+        }
+       .part-3 span.text{
+           color: #646363;
+           font-size: 1em;
+           text-align: center;
+           font-weight: 400;
+           pad: 0.7em 0;
+           line-height: 0;
+        }
+       @media screen and (max-width: 1024px) {
+            .part-3 .number-band{
+               width: 85vw;
+            }
+            .part-3 .container-dynamic{
+               height: 26vmin;
+               width: 26vmin;
+               font-size: 12px;
+            }
+       }
+       @media screen and (max-width: 768px) {
+            .part-3 .number-band{
+               width: 90vw;
+               flex-wrap: wrap;
+               gap: 30px;
+              
+            }
+            .part-3{
+                height: 60vmin;
+            }
+           .part-3 .container-dynamic{
+               height: 30vmin;
+               font-size: 14px;
+               width: calc(50% - 40px);
+            }
+       }
+       @media screen and (max-width: 480px) {
+            .part-3 .number-band{
+               gap: 1px;
+            }
+           .part-3 .container-dynamic{
+               width: 100%;
+               height: 20vmin;
+               font-size: 10px;
+            }
+            .part-3{
+                height: 80vmin;
+            }
+       }
+    </style>
 </head>
 <body>
-    <footer>
+    <div class="intro">
+        <header>
+            <div class="bx bx-menu" id="clickicon"></div>
+            
+                <ul class="navbar">
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
+                </ul>
+            
+            <div class="header-logo">
+                <img src="shoes.png" alt="" class="logo">
+            </div>
+            
+            
+            
+        </header>
+        <video autoplay loop muted plays-inline class="bgvideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        
+
+        <div class="content">
+            <h1>California</h1>
+            <a href="shop.html">Explore</a>
+        </div>
+    </div>
+
+    <h2 class="heading">Best Sellers</h2>
+    <div class="container">
+        
+        
+        <div class="content-section">
+            <div class="card">
+                <div class="imag">
+                    <img src="shoes4.jpg" alt="" class="image">
+                    <div class="overlay">
+                        <a href="shop.html">
+                            <button class="button">SHOP NOW</button>
+                        </a>
+                        
+                    </div>
+                </div>
+                <h2>Card one</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                
+            </div>
+            <div class="card">
+                <div class="imag">
+                    <img src="shoes4.jpg" alt="" class="image">
+                    <div class="overlay">
+                        <a href="shop.html">
+                            <button class="button">SHOP NOW</button>
+                        </a>
+                    </div>
+                </div>
+                <h2>Card two</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+            </div>
+            <div class="card">
+                <div class="imag">
+                    <img src="shoes4.jpg" alt="" class="image">
+                    <div class="overlay">
+                        <a href="shop.html">
+                            <button class="button">SHOP NOW</button>
+                        </a>
+                    </div>
+                </div>
+                <h2>Card two</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    <!--seperator section-->
+    <div class="separator">
+        <img src="/images/breezethrougheverystep.jpg" alt="" class="sep-img">
+        <h2>Breeze through every step</h2>
+        <p>Experience the freedom of gliding through each step, embracing the breeze along the way.</p>
+        <br>
+        <a href="shop.html">
+            <button class="button">SHOP NOW</button>
+        </a>
+    </div>
+    
+
+
+<!--Dynamic text-->
+    
+    
+
+    
+    
+    <h2 class="heading">New Arrivals</h2>
+    <section class="product">
+        
+        <button class="pre-btn"><img src="arrow.png" alt=""></button>
+        <button class="next-btn"><img src="arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card" style="flex: 0 0 auto;">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% OFF</span>
+                    <img src="shoes1.jpg" alt=""class="product-thumb">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the shoe</p>
+                    <span class="price">$20</span>
+                    <span class="actual-price">$40</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--seperator section-->
+    <div class="separator">
+        <img src="/images/man-tights-shorts-is-running-path-park.jpg" alt="" class="sep-img" style="object-position: 70% 50%;">
+        <h2>Step into day with Energized Soles.</h2>
+        <p>Energize your mornings one step at a time, embrace comfort and vitality with every stride in our shoes.</p>
+        <br>
+        <a href="shop.html">
+            <button class="button">SHOP NOW</button>
+        </a>
+    </div>
+    
+
+
+    <h2 class="heading">About us</h2>
+    <div class="about" data-aos="fade-out" id="about">
+        <img src="/images/about-img.jpg" alt="">
+        <p>Discover FootGrace, where style meets comfort in every step. We're here to redefine your shoe experience, crafting footwear that feels as amazing as it looks. Our passion lies in creating shoes that seamlessly fit into your lifestyle, whether you're strolling along the streets, embracing morning walks, or taking on new paths. With attention to detail and a commitment to quality, our collection is a fusion of fashion-forward designs and all-day comfort. Step into a world where your feet are in for a treat, and explore the perfect blend of style, comfort, and confidence.</p>
+        <br>
+        
+        <div class="part-3" data-aos="fade-up">
+            <div class="number-band">
+                <div class="container-dynamic">
+                    <!--<i class="fa-solid fa-utensils"></i>-->
+                    <i class="fa-solid fa-users"></i>
+                    <span class="num" data-val="400">000</span>
+                    <span class="text">Customer Logins</span>
+                </div>
+        
+                <div class="container-dynamic">
+                    <!--<i class="fa-solid fa-face-smile-beam"></i>-->
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="num" data-val="340">000</span>
+                    <span class="text">Orders Placed</span>
+                </div>
+        
+                <div class="container-dynamic">
+                    <!--<i class="fa-solid fa-list"></i>-->
+                    <i class="fa-solid fa-face-smile-beam"></i>
+                    <span class="num" data-val="225">000</span>
+                    
+                    <span class="text">Happy Customers</span>
+                </div>
+        
+                <div class="container-dynamic">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="num" data-val="280">000</span>
+                    <span class="text">Five star Rating</span>
+                </div>
+        
+                
+            </div>
+        
+        </div>
+    
+        <a href="shop.html">
+            <button class="button">SHOP NOW</button>
+        </a>
+    </div>
+
+    <footer id="footer">
         <div class="row">
             <div class="col">
                 <img src="shoes.png" class="logo">
@@ -29,11 +400,9 @@
             <div class="col">
                 <h3>Links <div class="underline"><span></span></div> </h3>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Facilities</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
             <div class="col">
@@ -45,10 +414,12 @@
                 </form>
 
                 <div class="social-icons">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>                    
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-pinterest"></i>
+                    <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9180091%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw0IGnBhDUARIsAMwFDLmErvecPx6TRbDUbsMKCCA0chYMaixThznbg7ORRUPLJyvtW7fpwWwaAviREALw_wcB"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                    
+                    
                 </div>
                 
             </div>
@@ -56,6 +427,118 @@
         <hr>
         <p class="copyright">Copyright-@ Gouri verma</p>
     </footer>
+    
+
+
+
+    <script>
+        let menu=document.querySelector('#clickicon');
+        let navbar=document.querySelector('.navbar');
+        menu.onclick=()=>{
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=()=>{
+            menu.classList.remove('bx-x');
+            navbar.classList.remove('active');
+        
+        }
+
+        
+        <!-- ... Your HTML and CSS ... -->
+
+       
+
+    const productContainer = document.querySelector('.product-container');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.pre-btn');
+    const containerDimensions = productContainer.getBoundingClientRect();
+    const containerWidth = containerDimensions.width;
+    const cardWidth = document.querySelector('.product-card').clientWidth;
+    let animationId;
+
+    function smoothScroll(targetPosition) {
+        const startPosition = productContainer.scrollLeft;
+        const startTime = performance.now();
+
+        function scrollStep(timestamp) {
+            const elapsedTime = timestamp - startTime;
+            const scrollAmount = Math.easeInOutQuad(elapsedTime, startPosition, targetPosition - startPosition, 500);
+
+            productContainer.scrollTo(scrollAmount, 0);
+
+            if (elapsedTime < 500) {
+                animationId = requestAnimationFrame(scrollStep);
+            }
+        }
+
+        animationId = requestAnimationFrame(scrollStep);
+    }
+
+    nextBtn.addEventListener('click', () => {
+        const maxScroll = productContainer.scrollWidth - containerWidth;
+        let scrollPosition = productContainer.scrollLeft + cardWidth;
+
+        if (scrollPosition > maxScroll) {
+            scrollPosition = maxScroll;
+        }
+
+        smoothScroll(scrollPosition);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        let scrollPosition = productContainer.scrollLeft - cardWidth;
+
+        if (scrollPosition < 0) {
+            scrollPosition = 0;
+        }
+
+        smoothScroll(scrollPosition);
+    });
+
+    // Easing function for smooth scroll
+    Math.easeInOutQuad = (t, b, c, d) => {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    };
+
+
+    
+    //part-3
+    
+    let valueDisplays=document.querySelectorAll(".num");
+        let interval=5000;
+    
+        valueDisplays.forEach((valueDisplay) => {
+            let startvalue=0;
+            let endvalue=parseInt(valueDisplay.getAttribute("data-val"));
+            console.log(endvalue);
+            let duration=Math.floor(interval/endvalue);
+            let counter=setInterval(function (){
+                startvalue+=1;
+                valueDisplay.textContent=startvalue + "+";
+                if(startvalue==endvalue){
+                    clearInterval(counter);
+                }
+            },duration)
+        })
+
+
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 500
+  });
+</script>
+
+
+
+
     
 </body>
 </html>
